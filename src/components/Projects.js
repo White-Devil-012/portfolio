@@ -24,7 +24,7 @@ export const Projects = () => {
       title: "Portfolio",
       description: "My portfolio site",
       imgUrl: portfolio,
-      githubLink: "https://github.com/White-Devil-012/Portfolio",
+      githubLink: "https://github.com/White-Devil-012/portfolio",
       websiteLink: "https://piyushkumar01.netlify.app",
     },
     {
