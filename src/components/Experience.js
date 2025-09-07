@@ -1,9 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import expTitle from "../assets/img/exp-title.png";
 import microsoftLogo from "../assets/img/microsoft-logo.jpg";
-import tecnoesisLogo from "../assets/img/tecnoesis-logo.jpg";
+import zupeeLogo from "../assets/img/zupee-logo.avif"
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { useEffect, useRef } from "react";
 
@@ -36,6 +35,44 @@ export const Experience = () => {
       <div className="container">
         <h2><img className="naruto-title" src={expTitle}></img></h2>
         <div ref={aRef} className="experience-items">
+        <motion.div
+            className="experience-item"
+            variants={leftVariants}
+            initial="hidden"
+            animate={leftControl}
+            transition={{ duration: 0.5 }}
+          >
+            <img src={zupeeLogo} alt="Zupee" className="company-logo" />
+            <div className="experience-details">
+              <h3>Zupee</h3>
+              <p>Software Engineer</p>
+              <p>Jul 2025 - Present</p>
+              <ul>
+                <li>Built a real-time reactions (Emoji) service using WebSockets in Node.js/TypeScript, designed to handle thousands of concurrent users with smooth sub-second latency.</li>
+                <li>Designed efficient MongoDB data models to safely issue thousands of scratch cards per day.</li>
+                <li>Set up New Relic dashboards and alerts, improving incident detection and cutting response time.</li>
+              </ul>
+            </div>
+          </motion.div>
+          <motion.div
+            className="experience-item"
+            variants={leftVariants}
+            initial="hidden"
+            animate={leftControl}
+            transition={{ duration: 0.5 }}
+          >
+            <img src={zupeeLogo} alt="Zupee" className="company-logo" />
+            <div className="experience-details">
+              <h3>Zupee</h3>
+              <p>Software Engineer Intern</p>
+              <p>Jan 2025 - Jun 2025</p>
+              <ul>
+                <li>Contributed to backend services in Node.js and TypeScript, enhancing system performance.</li>
+                <li>Integrated New Relic monitoring, reducing debugging effort and improving visibility.</li>
+                <li>Optimized MongoDB queries, reducing execution time by eliminating redundancies.</li>
+              </ul>
+            </div>
+          </motion.div>
           <motion.div
             className="experience-item"
             variants={leftVariants}
@@ -47,30 +84,12 @@ export const Experience = () => {
             <div className="experience-details">
               <h3>Microsoft</h3>
               <p>Software Engineer Intern</p>
-              <p>May 2024 - July 2024</p>
+              <p>May 2024 - Jul 2024</p>
               <ul>
-                <li>Developed DynaAssist, a browser extension integrated with Dynamics 365, to enhance user experience by automating
-                  repetitive tasks.</li>
-                <li>Utilized the OpenAI API with GPT-4 to enable users to perform actions through simple text prompts.</li>
-                <li>Designed features to allow ad-hoc instructions and perform memory leak testing.</li>
-              </ul>
-            </div>
-          </motion.div>
-          <motion.div
-            className="experience-item"
-            variants={leftVariants}
-            initial="hidden"
-            animate={leftControl}
-            transition={{ duration: 0.5 }}
-          >
-            <img src={tecnoesisLogo} alt="Tecnoesis" className="company-logo" />
-            <div className="experience-details">
-              <h3>Tecnoesis</h3>
-              <p>Front-end Developer</p>
-              <p>October 2022</p>
-              <ul>
-              <li>Took an important role in front-end development tasks.</li>
-              <li>Ensured a visually appealing and user-friendly interface for the fest’s online presence.</li>
+                <li>Built DynaAssist, an AI-powered Chrome extension for Microsoft Dynamics 365 that automated repetitive tasks and boosted user productivity.</li>
+                <li>Integrated OpenAI GPT APIs to enable natural language-driven workflows.</li>
+                <li>Developed the frontend using React and Manifest V3, ensuring seamless Dynamics 365 integration.</li>
+                <li>Conducted extensive testing to ensure automation accuracy and reliability.</li>    
               </ul>
             </div>
           </motion.div>

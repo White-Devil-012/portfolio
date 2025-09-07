@@ -55,7 +55,7 @@ export const NavBar = () => {
                 <a href="https://github.com/White-Devil-012" target="blank"><img src={githubIcon} alt="" /></a>
                 <a href="https://www.instagram.com/piyush.kum__01?utm_source=qr&igsh=MWw1anpvcjA3cTcwYg==" target="blank"><img src={instaIcon} alt="" /></a>
               </div>
-              <a href="https://drive.google.com/file/d/15qKMQCv6RKCDFifxR2FM2q0zzdDRvIlP/view?usp=drive_link" target="blank">
+              <a href="https://drive.google.com/file/d/1pXRhbdYOAPQJG95UVaeaH-4yJ-Zfyn3J/view?usp=drive_link" target="blank">
                 <button className="vvd"><span>RESUME</span></button>
               </a>
             </span>

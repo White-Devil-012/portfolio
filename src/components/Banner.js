@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Programmer", "Tech Enthusiast" ];
+  const toRotate = [ "Backend Developer", "Tech Enthusiast", "Sports Enthusiast" ];
   const period = 2000;
 
   useEffect(() => {
@@ -57,7 +57,7 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <div className="banner-intro">
-                  <h1>{`Hi! I'm Piyush,`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Programmer", "Tech Enthusiast" ]'><span className="wrap">{text}</span></span></h1>
+                  <h1>{`Hi! I'm Piyush,`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer", "Backend Engineer", "Sports Enthusiast" ]'><span className="wrap">{text}</span></span></h1>
                 </div>
                   <p>Enter the realm of digital mastery, where innovation and creativity intertwine like the threads of a finely woven jutsu. As a tech enthusiast with a passion for problem-solving, I invite you to explore my world of coding prowess and ninja-inspired ingenuity. Join me on a journey where every line of code is a step towards unlocking limitless potential and crafting a future shaped by imagination and skill.</p>
                   <button>
